@@ -1,0 +1,264 @@
+/* 
+Project Name: Final Project
+Client: HouseTrip
+Author: Amanda Claassen
+Developer @GA in London
+*/
+
+
+/******************************************
+/* SETUP                   
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right; 
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left; 
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES                   
+/*******************************************/
+.container {
+  margin-top: 50px;
+}
+
+h1 {
+  padding-top:20px; 
+}
+
+#nav {
+  clear: both;
+}
+ 
+  #nav ul li {
+      display: inline;
+      margin: 0 20px 0 0;
+      margin-bottom: 130px;
+  }
+ 
+    #nav a {
+        text-decoration: none;
+    }
+     
+      #nav a:hover {
+          text-decoration: underline;
+      }
+
+#headerLogo img {
+    margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+#welcome {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.feature img {
+    margin-bottom: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+.search-small {
+    line-height: 85px;
+    position: relative;
+}
+
+
+/******************************************
+/* LAYOUT                   
+/******************************************/
+.box {
+  height: 265px;
+  text-align: center;
+  padding: 100px;
+  display: block;
+  border-radius: 3px;
+
+}
+
+  .box a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    padding-top: 9px;
+  }
+
+.box_header {
+  border-bottom: 3px solid black;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 36px;
+}
+
+  .bximg1 {
+    background: url('../images/image400_100_1.jpg') no-repeat;
+  }
+
+  .bximg2 {
+    background: url('../images/image400_100_2.jpg') no-repeat;
+  }
+  .bximg3 {
+    background: url('../images/image400_100_3.jpg') no-repeat;
+  }
+
+
+/******************************************
+/* SOCIAL MEDIA                   
+/*******************************************/
+
+#social-media ul {
+}
+
+  #social-media ul li {
+       float: left;
+       text-indent: 100%;
+       white-space: nowrap;
+       overflow: hidden;
+  }
+
+    #social-media ul li a {
+              display: block;
+              width: 42px;
+              height: 42px;
+              background: url(../images/socialNav.png);
+         }
+
+         /* social-media normal state */
+         #social-media ul li.linkedIn a {
+              background-position:-6px 108px;
+         }
+         #social-media ul li.twitter a {
+              background-position:-54px 108px; 
+         }
+
+         #social-media ul li.facebook a {
+              background-position:-158px 108px; 
+         }
+
+         #social-media ul li.rss a {
+              background-position:-103px 108px; 
+              }
+
+         
+         /* social-media hover */
+         #social-media ul li.linkedIn a:hover {
+              background-position:-6px -4px; 
+         }
+
+         #social-media ul li.twitter a:hover {
+              background-position:-54px -4px; 
+         }
+
+         #social-media ul li.facebook a:hover {
+              background-position:-150px -4px; 
+         }
+
+         #social-media ul li.rss a:hover {
+              background-position:-100px -4px; 
+         }
+
+/*******************************************/
+ /*FOOTER
+/*******************************************/
+
+/* Copyright */
+
+#copyright {   
+     float:left;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES                   
+/*******************************************/
+
+#question_bar {
+  text-align: center;
+  border: 1px solid black;
+  background: #33B6C4;
+  border-radius: 5px;
+  height: 40px;
+}
+
+  #question_bar li {
+      margin: auto;
+      height: 38px;
+  }
+
+    #question_bar ul li {
+      cursor: pointer;
+    }
+
+
+      #question_bar li#guest {
+          border-right: 1px solid black;
+      }
+
+      #question_bar li#host {
+          border-right: 1px solid black;
+      }
+
+#guest_bar h4 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+#host_bar h4 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+#other_bar h4 {
+  text-align: center;
+  margin: 15px 0;
+}
+
+#guest_bar,
+#host_bar,
+#other_bar {
+  display: none;
+}
+
+/******************************************
+/* JS STYLES                   
+/*******************************************/
+
+.active_bar  {
+    background-color: #1B798A;
+    }
+
+  /* All Mobile Sizes (devices and browser) */
+  @media only screen and (max-width: 767px) {
+    .bar.one-third.column {
+    width: 33%;
+  }
